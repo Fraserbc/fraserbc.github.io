@@ -1,0 +1,45 @@
+div.menu ul {
+	list-style: none;
+	background-color: #000000;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 16px;
+}
+
+div.menu ul li {
+	background-color: #000000;
+	display: inline;
+	padding: 8px;
+	padding-top: 17px;
+	padding-bottom: 16px;
+}
+
+div.menu ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+div.menu ul li.c {
+	background-color: #808080;
+}
+
+html, body {
+	margin: 0px;
+}
+
+h1.name {
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	padding-top: 16px;
+	padding-left: 74px;
+}
+
+div.menu ul li.pad {
+	padding-left: 50px;
+}
+
+div.char {
+	padding-left: 45px;
+	border: 5px solid #000000;
+	font-family: "Open Sans", sans-serif;
+}
