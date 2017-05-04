@@ -24,7 +24,7 @@
 	function isValid(){
 	var password = document.getElementById('password').value;
 	if (password == "you will never guess the password")
-	{window.location = "http://fraserbc.github.io/privsec.html"}
+	{window.location = "http://fraserbc.github.io/secret.html"}
 	else
 	{alert('you will never guess the password')}
 	}
@@ -32,7 +32,7 @@
 	
 	<form name="PasswordField" action="">
 	Password:
-	<input type="password" id="password" name="password">
-	<input type="button" value="Log in" onclick="isValid();">
+	<input type="password" id="password" name="password" onkeydown="if(event.keyCode == 13) {document.getElementById('eBtn').click()}">
+	<input type="button" value="Log in" onclick="isValid();" id="eBtn">
 	</form>
 </div>
