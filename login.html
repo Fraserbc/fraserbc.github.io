@@ -1,0 +1,38 @@
+<html>
+<head>
+
+<link type="text/css" rel="stylesheet" href="/CSS/index.css"/>
+<title>Gone</title>
+
+</head>
+
+<h1 class="name">Gone</h1>
+
+<div class="menu">
+	<ul>
+		<li class="pad"></li>
+		<li><a href="/index.html">Character Cop</a></li>
+		<li><a href="/aa.html">Agony Aunt</a></li>
+		<li><a href="/sum.html">Summariser</a></li>
+		<li><a href="/link.html">Link Maker</a></li>
+		<li><a href="/bgr.html">Background Research</a></li>
+	</ul>
+</div>
+
+<div class="Char">
+	<script type="text/javascript">
+	function isValid(){
+	var password = document.getElementById('password').value;
+	if (password == "you will never guess the password")
+	{window.location = "http://fraserbc.github.io/privsec.html"}
+	else
+	{alert('you will never guess the password')}
+	}
+	</script>
+	
+	<form name="PasswordField" action="">
+	Password:
+	<input type="password" id="password" name="password">
+	<input type="button" value="Log in" onclick="isValid();">
+	</form>
+</div>
