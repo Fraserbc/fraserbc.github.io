@@ -30,9 +30,9 @@
 	}
 	</script>
 	
-	<form name="PasswordField" action="/login.html">
+	<form name="PasswordField" action="">
 	Password:
-	<input type="password" id="password" name="password">
-	<input type="button" value="Log in" onclick="isValid();">
+	<input type="password" id="password" name="password" onkeydown="if(event.keyCode == 13) {document.getElementById('eBtn').click()}">
+	<input type="button" value="Log in" onclick="isValid();" id="eBtn">
 	</form>
 </div>
