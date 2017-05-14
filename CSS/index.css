@@ -43,3 +43,7 @@ div.char {
 	border: 5px solid #000000;
 	font-family: "Open Sans", sans-serif;
 }
+
+p {
+	white-space: pre-wrap;
+}
