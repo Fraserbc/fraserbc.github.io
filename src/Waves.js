@@ -32,6 +32,8 @@ class Waves extends React.Component {
             return (
                 <div id="waves-el" ref={this.vantaRef}></div>
             );
+        } else {
+            return null;
         }
     }
 }
