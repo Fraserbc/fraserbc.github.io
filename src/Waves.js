@@ -1,6 +1,5 @@
 import React from 'react';
 import WAVES from 'vanta/dist/vanta.waves.min';
-import * as THREE from 'three';
 
 class Waves extends React.Component {
     constructor() {
@@ -12,12 +11,14 @@ class Waves extends React.Component {
     }
     componentDidMount() {
         if(this.enabled) {
-            this.vantaEffect = WAVES({
-                el: this.vantaRef.current,
-                THREE: THREE,
-                mouseControls: false,
-                touchControls: false,
-                gyroControls: false,
+            import("three").then((THREE) => {
+                this.vantaEffect = WAVES({
+                    el: this.vantaRef.current,
+                    THREE: THREE,
+                    mouseControls: false,
+                    touchControls: false,
+                    gyroControls: false,
+                });
             });
         }
     }
