@@ -18,7 +18,7 @@ class App extends React.Component {
 
   discordClick() {
     this.setState({showing: true});
-    setTimeout(() => { this.setState({showing: false}) }, 1500);
+    setTimeout(() => { this.setState({showing: false}) }, 250);
     navigator.clipboard.writeText("frsr#5381");
   }
 
